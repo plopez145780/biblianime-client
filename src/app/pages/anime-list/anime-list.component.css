@@ -1,0 +1,36 @@
+h2 {
+  margin: 16px 16px 0;
+}
+
+app-card {
+  width: 100%;
+}
+
+.anime-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.anime-card-container::after {
+  content: '';
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+
+.anime-card-container:last-of-type::after {
+  content: none;
+}
+
+@media screen and (min-width: 1024px) {
+  app-card {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  app-card {
+    width: 33.33%;
+  }
+}
