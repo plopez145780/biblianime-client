@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { ThemeToggleComponent } from '../components/theme-toggle/theme-toggle.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,4 +13,10 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class HeaderComponent {
   @Input({ required: true }) appTitle!: string;
+
+  constructor(private readonly router: Router) {}
+
+  navigateTo(): void {
+    this.router.navigate(['/']);
+  }
 }

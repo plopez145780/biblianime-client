@@ -1,1 +1,16 @@
-<p>not-found works!</p>
+<div class="container">
+  <img src="/images/404.jpeg" alt=""/>
+  <article>
+    <mat-card class="theme-container" appearance="outlined">
+      <mat-card-title>
+        <h1>Vous êtes perdu...</h1>
+      </mat-card-title>
+      <mat-card-content>
+        <p>Visiblement, vous ne possédez pas l'Extra Skill <strong>"Sens de l'Orientation"</strong>, et vous vous êtes perdu !</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button (click)="navigateTo()" class="theme-container">Respawn à votre point de départ</button>
+      </mat-card-actions>
+    </mat-card>
+  </article>
+</div>

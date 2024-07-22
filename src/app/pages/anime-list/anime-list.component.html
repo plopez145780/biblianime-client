@@ -1,3 +1,10 @@
-@for (anime of animes; track anime) {
-  <app-card [anime]="anime"></app-card>
-}
+
+  @for (animeType of animeTypes; track animeType) {
+    <h2>{{animeType.type}}</h2>
+    <div class="anime-card-container border-color">
+      @for (simpleAnime of animeType.animeCardDTOS; track simpleAnime) {
+        <app-card [anime]="simpleAnime"></app-card>
+      }
+    </div>
+  }
+

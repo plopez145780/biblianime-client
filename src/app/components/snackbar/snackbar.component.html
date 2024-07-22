@@ -1,0 +1,6 @@
+<div class="container" [ngClass]="{'info': data.type === INFO_TYPE, 'success': data.type === SUCCESS_TYPE, 'error': data.type === ERROR_TYPE}">
+  <span matSnackBarLabel>{{data.message}}</span>
+  <button mat-icon-button class="mdc-icon-button" matSnackBarAction (click)="snackBarRef.dismissWithAction()">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>

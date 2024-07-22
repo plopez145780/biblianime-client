@@ -5,3 +5,12 @@
 .mat-toolbar {
   background-color: transparent;
 }
+
+.mat-toolbar h1 {
+  font-family: 'Dekko-Regular';
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}

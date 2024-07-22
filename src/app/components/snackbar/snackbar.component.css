@@ -1,0 +1,29 @@
+::ng-deep .mat-mdc-snack-bar-container .mat-mdc-snackbar-surface {
+  color: white;
+  padding: 0;
+}
+
+.container {
+  padding: 16px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.info {
+  background-color: #2196F3;
+}
+
+.success {
+  background-color: #4CAF50;
+}
+
+.error {
+  background-color: #f44336
+}
+
+button {
+  padding: 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

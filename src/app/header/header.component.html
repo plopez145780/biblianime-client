@@ -1,6 +1,9 @@
 <header>  
   <mat-toolbar>
-    <h1>{{appTitle}}</h1>
+    <h1 class="cliquable" (click)="navigateTo()">
+      <mat-icon class="material-symbols-outlined">lists</mat-icon>
+      {{appTitle}}
+    </h1>
     <span class="example-spacer"></span>
     <mat-icon>search</mat-icon>
     <app-theme-toggle></app-theme-toggle>
