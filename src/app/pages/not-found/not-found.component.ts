@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { Router } from '@angular/router';
+import { ROUTES } from '../../models/route.constante';
 
 @Component({
   standalone: true,
@@ -14,7 +15,7 @@ export class NotFoundComponent {
   constructor(private readonly router: Router) {}
 
   navigateTo(): void {
-    this.router.navigate(['/']);
+    this.router.navigateByUrl(ROUTES.ACCUEIL);
   }
 
 }

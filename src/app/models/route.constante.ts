@@ -1,5 +1,5 @@
 export const ROUTES = {
-  ACCUEIL: 'accueil',
+  ACCUEIL: '/',
   IDENTIFICATION: 'identification',
   CATALOGUE: 'catalogue',
   COLLECTION: 'collection'

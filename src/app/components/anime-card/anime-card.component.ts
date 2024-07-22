@@ -18,10 +18,10 @@ export class AnimeCardComponent {
   @Input({ required: true }) anime!: SimpleAnime;
   durationInSeconds = 5;
   
-  constructor(private readonly _snackBar: MatSnackBar) {}
+  constructor(private readonly snackBar: MatSnackBar) {}
 
   addAnimeToCollection(): void {
-    this._snackBar.openFromComponent(SnackBarComponent, {
+    this.snackBar.openFromComponent(SnackBarComponent, {
       duration: this.durationInSeconds * 1000,
       data: {
         message: `L'anime a été ajouté à votre collection.`,
