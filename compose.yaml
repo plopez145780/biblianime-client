@@ -1,0 +1,6 @@
+services:
+  front:
+    build:
+      context: .
+    ports:
+      - 8000:80
